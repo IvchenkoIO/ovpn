@@ -1,0 +1,16 @@
+client
+dev tun
+proto udp
+remote 192.168.174.134 1200
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+mute-replay-warnings
+ca ca.crt
+cert client.crt
+key client.key
+remote-cert-tls server
+cipher AES-256-CBC
+auth SHA256
+verb 4
